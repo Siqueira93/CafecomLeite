@@ -1,0 +1,40 @@
+
+.tabelaform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.parteUmform {
+    background-color: rgb(168, 168, 168);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 15%;
+    height: 50vh;
+    border: 1px black;
+}
+.boasvindas img{
+    height: 200px;
+    width: 200px;
+}
+
+.parteDoisform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: aqua;
+    width: 30%;
+    height: 70vh;
+}
+
+.name{
+    background-color: rgb(11, 146, 29);
+    gap: 100px;
+}
