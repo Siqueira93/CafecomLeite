@@ -1,0 +1,20 @@
+.Sobre {
+    margin-top: 50px;
+   
+}
+
+#SobreTexto {
+    margin: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#imgAleatoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
