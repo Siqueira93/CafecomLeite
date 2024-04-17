@@ -6,6 +6,7 @@
     width: 100%;
     margin-top: 50px;
     margin-bottom: 100px;
+   
 }
 
 .parteUmform {
@@ -27,14 +28,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     text-align: center;
-    background-color: aqua;
+    background-image: url(../images/Frame\ 6.png);
     width: 30%;
     height: 70vh;
 }
 
-.name{
-    background-color: rgb(11, 146, 29);
-    gap: 100px;
+h1 {
+    text-align: center;
+}
+
+.parteDois {
+    gap: 30px;
+}
+
+.parteDois h2{
+    display: flex;
+    position: relative;
+    
+}
+
+.form-check-label {
+    color:white ;
+}
+
+
+.form-check {
+    display: flex;
+
+}
+
+.formularioCadastro label {
+    text-transform: uppercase;
+    
 }
