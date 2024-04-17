@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="shortcut icon" href="../images/favicon-cafe.svg" type="image/x-icon">
     <link rel="stylesheet" href="../styles/temcafe.css">
+    <link rel="stylesheet" href="../styles/pedido.css">
 </head>
 <body data-bs-theme=white>
     <header>
@@ -19,8 +20,8 @@
                     <div id="logoprincipal">
                       <img class src="../images/logo.svg"  alt="">
                     </div>  
-                    <div id="logoNome">
-                      <h2>CAFÉ COM LEITE</h2>
+                    <div class="nomelogo" id="logoNome">
+                      <a href="../index.html"><h2>CAFÉ COM LEITE</h2></a>
                     </div>
                   </a>
                 </div>
@@ -32,25 +33,25 @@
       <nav class="navbar navbar-expand-lg d-flex justify-content-center">
                 <div class="container m-1">
                     <!-- menu hamburguinho -->
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse p-0 m-0" id="navbarSupportedContent">
-                    <!-- menu principal -->
-                    <ul class="navbar-nav me-auto mb-2 gap-3">
-                      <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Tem Café?</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../pages/pedidos.html">Pedidos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../pages/cadastre.html">Cadastre</a>
-                      </li>
-                    </ul>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse p-0 m-0" id="navbarSupportedContent">
+                      <!-- menu principal -->
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+                        <li class="nav-item">
+                          <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../pages/temcafe.html">Tem Café?</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Pedidos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../pages/cadastre.html">Cadastre</a>
+                        </li>
+                      </ul>
                     <!-- botao procurar -->
                     <div id="procurar">
                       <form class="d-flex gap-2" role="search">
@@ -68,3 +69,116 @@
                 </div>
       </nav>
     </header>
+
+    <main>
+      <section class="container-fluid" id="produtos">
+        <div class="row" id="items">
+            <!-- item1 -->
+            <div id="kopi" class="card" style="width: 18rem;">
+                <img src="../images/Authentic-Kopi-luwak.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kopi Luwak</h5>
+                  <p class="card-text"></p>
+                  <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#cafeKOPI">
+                        Conheça nosso produto
+                    </button>
+                </div>
+            </div>
+            <!-- item2 -->
+            <div id="death" class="card" style="width: 18rem;">
+                <img src="../images/o_cafe_mais_forte_do_mundo_700.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Death Wish</h5>
+                  <p class="card-text"></p>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#cafeWish">
+                    Conheça nosso produto
+                </button>
+                </div>
+              </div>
+            <!-- item3 -->
+            <div id="sitio" class="card" style="width: 18rem;">
+                <img src="../images/cafe do sitio.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Café do Sitio</h5>
+                  <p class="card-text"></p>
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#cafeSitio">
+                    Conheça nosso produto
+                </button>
+                </div>
+              </div>
+      </div>
+      </section>
+
+    </main>
+    
+     <!-- Modal item1-->
+  <div class="modal fade" id="cafeKOPI" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Kopi Luwak</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body m-2">
+            Os grãos de café são coletados e processados a partir das fezes do animal. O sabor diferenciado se dá por conta das enzimas secretadas durante a digestão.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+          <button type="button" class="btn btn-primary">Adicione ao carrinho</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal item2-->
+  <div class="modal fade " id="cafeWish" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Death Wish</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body m-2">
+            É um café produzido com safras certificadas pelo órgão americano USDA e com garantia de plantação ORGÂNICA Premium, ou seja, é um café de ALTÍSSIMA QUALIDADE. Considerado e reconhecido como o café mais forte e poderoso do mundo com 200% mais cafeina que um café convencional.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+          <button type="button" class="btn btn-dark">Adicione ao carrinho</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal item3-->
+  <div class="modal fade" id="cafeSitio" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Café do Sitio</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body m-2">
+            No Café do Sítio, há um cuidadoso processo, que vai desde a compra dos grãos para a formação do blend até a distribuição nos supermercados. Um provador profissional determina como será a mistura; depois, a torra automatizada garante o controle total dos parâmetros que influenciam a qualidade do café. Por fim, uma equipe de vendedores faz o atendimento aos supermercadistas, levando o produto a todo o DF. O café está disponível em embalagens de 500g e 250g, nas versões “almofada” e vácuo.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+          <button type="button" class="btn btn-dark">Adicione ao carrinho</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="d-flex justify-content-center align-items-center flex-column w-100 ">
+    <div id="infoFooter">
+      <p>Siga nos nas nossas redes sociais: <a href="">@CAFECOMLEITE</a></p>
+    </div>
+    <div id="autorais">
+      <p>&copy; Todos os direitos reservados ao @CAFECOMLEITE inc.</p>
+    </div>
+  </footer>
+
+      <script src="../script/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
